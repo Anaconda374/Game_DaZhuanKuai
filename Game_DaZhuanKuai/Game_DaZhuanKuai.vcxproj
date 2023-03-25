@@ -128,6 +128,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ExBoard.cpp" />
     <ClCompile Include="ExMap.cpp" />
     <ClCompile Include="test.cpp" />
   </ItemGroup>
@@ -135,6 +136,7 @@
     <Image Include="background.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ExBoard.h" />
     <ClInclude Include="ExCommon.h" />
     <ClInclude Include="ExMap.h" />
   </ItemGroup>

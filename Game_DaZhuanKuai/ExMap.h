@@ -10,7 +10,7 @@ public:
 
 //declare the map functions:
 //initial map;
-void initMap(struct Exmap* pMap);
+void initMap(class ExMap* pMap);
 
 //constuct the map of bricks
-void drawMap(struct Exmap Map);
+void drawMap(class ExMap Map);
