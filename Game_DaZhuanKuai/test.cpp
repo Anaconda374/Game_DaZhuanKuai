@@ -32,21 +32,26 @@ Upload image steps:
 #include "ExCommon.h"
 #include "ExMap.h"
 #include "ExBoard.h"
+#include "ExBall.h"
 
-int main(){
+int test_main(){
 
 	//create the ambient screen
 	initgraph(SCR_WIDTH, SCR_HEIGHT);
 	IMAGE background;
 	loadimage(&background, "./background.jpg", SCR_WIDTH, SCR_HEIGHT);//load image in given size.
 	
-	//create the brick map(or table).
+	//create a brick map(or table) object.
 	ExMap map;
 	initMap(&map);
 
-	//create the board at the bottom of the screen.
+	//create a board object at the bottom of the screen.
 	ExBoard board;
 	initBoard(&board);
+
+	//create a ball object.
+	ExBall ball;
+	initBall(&ball);
 
 //'BeginBatchDraw()' function is used to begin batch drawing mode. After execution, any drawing operations(after 'BeginBatchDraw()') will be temporarily not output(cached) to the graphics windows until call function 'flushBatchDraw()' or 'EndBatchDraw()'.
 	BeginBatchDraw();
@@ -54,7 +59,7 @@ int main(){
 		putimage(0, 0, &background);
 		drawMap(map);
 		drawBoard(board);
-
+		drawBall(ball);
 		FlushBatchDraw();
 
 	}

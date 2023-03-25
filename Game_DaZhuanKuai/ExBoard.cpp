@@ -9,7 +9,7 @@ void initBoard(ExBoard* pBoard)
 	pBoard->y = SCR_HEIGHT - BRICK_H;
 	pBoard->width = BRICK_W * 2;
 	pBoard->height = BRICK_H;
-	pBoard->speed = 1; //1 pixel per click.
+	pBoard->speed = 1; //the board moves 1 pixel per click.
 	pBoard->color = WHITE;
 }
 

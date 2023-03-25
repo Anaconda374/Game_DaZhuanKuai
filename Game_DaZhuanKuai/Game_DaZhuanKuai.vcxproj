@@ -128,17 +128,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ExBall.cpp" />
     <ClCompile Include="ExBoard.cpp" />
+    <ClCompile Include="ExGame.cpp" />
     <ClCompile Include="ExMap.cpp" />
+    <ClCompile Include="ExTimer.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="background.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ExBall.h" />
     <ClInclude Include="ExBoard.h" />
     <ClInclude Include="ExCommon.h" />
+    <ClInclude Include="ExGame.h" />
     <ClInclude Include="ExMap.h" />
+    <ClInclude Include="ExTimer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

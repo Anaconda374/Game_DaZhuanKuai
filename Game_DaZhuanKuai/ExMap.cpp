@@ -34,13 +34,9 @@ void drawMap(ExMap Map)
 				fillrectangle(x, y, x + BRICK_W, y + BRICK_H);
 				break;
 			
-			//'case 0' for the brick eliminated.
+			//'if twoDimArr[i][j] = 0' , then not draw the brick,  for the brick is eliminated.
 			case 0:
-				
-				fillrectangle(x, y, x + BRICK_W, y + BRICK_H);
 				break;
-
-			
 			}
 
 		
